@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: bfhl-challenge
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
