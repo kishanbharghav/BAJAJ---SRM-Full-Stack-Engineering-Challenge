@@ -191,7 +191,7 @@ function buildResponse(hierarchies, invalidEntries, duplicateEdges) {
   };
 }
 
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
   // Setup CORS
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
